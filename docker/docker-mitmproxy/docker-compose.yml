@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  mitmproxy:
+    image: mitmproxy/mitmproxy
+    ports:
+      - 9090:8080
+      - 9091:8081
+    command: mitmweb --mode reverse:http://localhost:8080 --web-iface 0.0.0.0
