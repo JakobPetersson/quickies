@@ -1,6 +1,7 @@
-#
-# Curl download and log size of downloaded file.
-#
+
+Curl download and log size of downloaded file.
+
+```bash
 download() {
   local URL="${1}"
   local FILE="${2}"
@@ -15,3 +16,4 @@ download() {
   disown "${STATUS_PID}"
   kill -s 9 "${STATUS_PID}" > /dev/null
 }
+```
