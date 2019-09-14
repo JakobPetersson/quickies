@@ -1,5 +1,4 @@
-
-Curl download and log size of downloaded file.
+# Curl download with simultaneous file size logging
 
 ```bash
 download() {
