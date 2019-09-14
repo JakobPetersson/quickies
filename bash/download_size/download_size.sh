@@ -6,7 +6,7 @@ download() {
   local FILE="${2}"
 
   # Log size in background
-  while true; do sleep 5; _log `ls -lah "${FILE}" | awk '{print $5}'`; done &
+  while true; do sleep 5; echo `ls -lah "${FILE}" | awk '{print $5}'`; done &
   local STATUS_PID="$!"
 
   curl -sf -o "${FILE}" "${URL}"
