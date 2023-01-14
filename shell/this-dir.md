@@ -1,7 +1,7 @@
 # Get the directory of current script
 
 ```bash
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 set -euo pipefail
 
