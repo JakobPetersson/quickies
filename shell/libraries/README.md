@@ -3,7 +3,7 @@
 ```bash
 #!/usr/bin/env sh
 
-# Oncly define functions once
+# Only define functions once
 [ -z "${LIBRARY_NAME_SH:-}" ] || return 0
 LIBRARY_NAME_SH=Y
 
