@@ -1,7 +1,7 @@
 # Source libraries safely
 
 ```bash
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # Only define functions once
 [ -z "${LIBRARY_NAME_SH:-}" ] || return 0
